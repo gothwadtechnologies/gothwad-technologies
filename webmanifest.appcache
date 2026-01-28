@@ -1,9 +1,10 @@
 {
     "icons": [
         {
-            "src": "img/ventagenie-icon.png",
+            "src": "img/gt-icon.png",
             "sizes": "any",
             "type": "image/png"
         }
     ]
+
 }

@@ -14,12 +14,8 @@ import Industries from './components/Industries';
 import ProjectShowcase from './components/ProjectShowcase';
 import AppStore from './components/AppStore';
 import TechStack from './components/TechStack';
-import Security from './components/Security';
 import Comparison from './components/Comparison';
-import SchoolApp from './components/SchoolApp';
-import Roadmap from './components/Roadmap';
 import DevTools from './components/DevTools';
-import SupportTiers from './components/SupportTiers';
 import Testimonials from './components/Testimonials';
 import Leadership from './components/Leadership';
 import FAQ from './components/FAQ';
@@ -48,10 +44,16 @@ const App: React.FC = () => {
     <div className="min-h-screen selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden text-slate-900">
       <Navbar onOpenContact={() => setDrawerOpen(true)} onLogoClick={toggleLogin} />
       
-      <main className="pt-[116px]">
-        <Hero />
-        <CompanyAim />
-        <TrustBar />
+      <main className="pt-[80px] md:pt-[100px]">
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="aim">
+          <CompanyAim />
+        </section>
+        <section id="trust">
+          <TrustBar />
+        </section>
         
         <section id="stats" className="py-24 relative overflow-hidden">
           <Stats />
@@ -126,30 +128,6 @@ const App: React.FC = () => {
           <CodeMarketplace />
         </section>
 
-        <section id="impact" className="py-24 md:py-40 bg-slate-900 text-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 overflow-hidden rounded-[40px] md:rounded-[60px] border border-white/10 shadow-2xl">
-              <div className="bg-slate-900 p-12 md:p-20 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-4xl md:text-5xl font-black mb-8 leading-none italic uppercase tracking-tighter">Global <br /> Architecture.</h3>
-                  <p className="text-slate-400 text-lg">Powering institutional growth across 15+ countries with proprietary G-Cloud nodes.</p>
-                </div>
-                <div className="mt-20">
-                  <div className="text-5xl md:text-6xl font-black text-[#0056B3]">24/7</div>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Uptime Reliability</p>
-                </div>
-              </div>
-              <div className="lg:col-span-2 min-h-[300px] md:min-h-[400px] overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" 
-                  alt="Global Network" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 transform hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="custom-software" className="py-24 md:py-32">
           <CustomSoftware />
         </section>
@@ -160,10 +138,6 @@ const App: React.FC = () => {
 
         <section id="process" className="py-24 md:py-32">
           <Process />
-        </section>
-
-        <section id="tech-matrix" className="py-24 md:py-32">
-          <TechStack />
         </section>
 
         <section id="industries" className="py-24 md:py-32">
@@ -193,24 +167,8 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="security" className="py-24 md:py-32">
-          <Security />
-        </section>
-
-        <section id="school-x" className="py-24 md:py-32">
-          <SchoolApp />
-        </section>
-
-        <section id="roadmap" className="py-24 md:py-32">
-          <Roadmap />
-        </section>
-
         <section id="studio" className="py-24 md:py-32">
           <DevTools />
-        </section>
-
-        <section id="support-tiers" className="py-24 md:py-32">
-          <SupportTiers />
         </section>
 
         <section id="testimonials" className="py-24 md:py-32">
@@ -224,9 +182,13 @@ const App: React.FC = () => {
         <section id="faq" className="py-24 md:py-32">
           <FAQ />
         </section>
+
+        <section id="tech-matrix" className="py-24 md:py-32">
+          <TechStack />
+        </section>
       </main>
 
-      <Footer onOpenContact={() => setDrawerOpen(true)} />
+      <Footer onOpenContact={() => setDrawerOpen(true)} id="join-us" />
 
       {/* Left Side: Floating Buttons Stack (Logo + Warehouse) */}
       <div className="fixed bottom-6 left-6 z-[140] flex flex-col gap-4">

@@ -3,62 +3,49 @@ import React from 'react';
 
 const leaders = [
   {
-    name: 'Pawan Gothwad',
-    role: 'CEO & Principal Architect',
-    bio: 'Pawan is the lead visionary behind Gothwad Technologies, specializing in ultra-high-capacity system architectures and secure digital ecosystems.',
+    name: 'Pawan Kumar Meena',
+    role: 'Founder & Principal Architect',
+    bio: 'Pawan (Gothwad) is the lead visionary behind Gothwad Technologies, specializing in ultra-high-capacity system architectures.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop',
-    quote: '"We build for stability first."'
   },
   {
     name: 'Vishnu Meena',
     role: 'Co-Founder & Head of Tech',
-    bio: 'A master of backend performance, Vishnu ensures that every Gothwad product operates with zero-latency efficiency on the global stage.',
+    bio: 'A master of backend performance, Vishnu ensures that every Gothwad product operates with zero-latency efficiency.',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop',
-    quote: '"Code is the ultimate craft."'
+  },
+  {
+    name: 'Chirag Jha',
+    role: 'CEO & Strategy Lead',
+    bio: 'Chirag drives the global expansion and strategic partnerships for the Gothwad ecosystem.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop',
   }
 ];
 
 const Leadership: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="flex flex-col md:flex-row items-end justify-between mb-20">
-        <div className="max-w-2xl">
-          <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Board of Directors</span>
-          <h2 className="text-4xl md:text-6xl font-black mt-2 text-slate-900 leading-tight">Visionary Engineering</h2>
-        </div>
-        <button className="mt-8 md:mt-0 px-8 py-4 glass-card border border-slate-200 text-slate-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all flex items-center gap-3 shadow-sm hover:shadow-md">
-          View Full Team 
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </button>
+      <div className="text-center mb-20">
+        <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Board of Directors</span>
+        <h2 className="text-4xl md:text-5xl font-black mt-2 text-slate-900 leading-tight">Visionary Engineering</h2>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center gap-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
         {leaders.map((leader, i) => (
-          <div key={i} className="group relative w-full md:w-1/2">
-             <div className="relative rounded-[50px] overflow-hidden aspect-[4/5] shadow-2xl transition-all duration-700 hover:scale-[0.99] border border-white/50">
-               <img 
-                 src={leader.image} 
-                 alt={leader.name} 
-                 className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
-               />
-               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/10 to-transparent opacity-90"></div>
-               
-               <div className="absolute bottom-10 left-10 right-10">
-                  <span className="text-blue-400 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">{leader.role}</span>
-                  <h3 className="text-4xl font-black text-white mb-4 tracking-tighter">{leader.name}</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-8 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                    {leader.bio}
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <div className="h-[2px] w-8 bg-blue-500"></div>
-                    <p className="text-white font-bold italic text-lg opacity-90">
-                      {leader.quote}
-                    </p>
-                  </div>
-               </div>
-             </div>
+          <div key={i} className="flex flex-col items-center text-center group">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105 relative">
+              <img 
+                src={leader.image} 
+                alt={leader.name} 
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <span className="text-[#0056B3] font-black text-[10px] uppercase tracking-[0.3em] mb-2 block">{leader.role}</span>
+            <h3 className="text-2xl font-black text-slate-900 mb-3 tracking-tighter">{leader.name}</h3>
+            <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+              {leader.bio}
+            </p>
           </div>
         ))}
       </div>

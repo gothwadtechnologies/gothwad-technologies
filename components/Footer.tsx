@@ -1,18 +1,22 @@
 
 import React from 'react';
+import JoinUsSection from './JoinUsSection';
 
 interface FooterProps {
   onOpenContact: () => void;
+  id?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
+const Footer: React.FC<FooterProps> = ({ onOpenContact, id }) => {
   const logoUrl = "https://i.ibb.co/KxxyJK63/IMG-20260215-091905-778.webp";
 
   return (
-    <footer className="bg-slate-900 text-white pt-24 pb-12 overflow-hidden relative">
+    <footer id={id} className="bg-slate-900 text-white pt-24 pb-12 overflow-hidden relative">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#0056B3] to-transparent"></div>
       
       <div className="container mx-auto px-6">
+        <JoinUsSection />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-8">

@@ -191,14 +191,14 @@ const App: React.FC = () => {
       <Footer onOpenContact={() => setDrawerOpen(true)} id="join-us" />
 
       {/* Left Side: Floating Buttons Stack (Logo + Warehouse) */}
-      <div className="fixed bottom-6 left-6 z-[140] flex flex-col gap-4">
+      <div className="fixed bottom-3 left-3 z-[140] flex flex-col gap-3">
         {/* Identity Portal Button - Perfect Circle for Logo - ZOOMED IN */}
         <button 
           onClick={toggleLogin}
-          className="bg-white p-4 md:p-5 rounded-full shadow-[0_15px_45px_rgba(0,0,0,0.1)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-slate-200 overflow-hidden w-14 h-14 md:w-16 md:h-16"
+          className="bg-white p-3 md:p-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-slate-200 overflow-hidden w-12 h-12 md:w-14 md:h-14"
         >
           <img src={logoUrl} alt="Gothwad Logo" className="w-full h-full object-cover scale-[1.7]" />
-          <span className="absolute left-full ml-6 glass-card text-slate-900 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
+          <span className="absolute left-full ml-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
             Access Identity Portal
           </span>
         </button>
@@ -208,32 +208,32 @@ const App: React.FC = () => {
           href={storeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#22C55E] text-white p-4 md:p-5 rounded-full md:rounded-[24px] shadow-[0_15px_45px_rgba(34,197,94,0.3)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-white/20 w-14 h-14 md:w-16 md:h-16"
+          className="bg-[#22C55E] text-white p-3 md:p-4 rounded-full md:rounded-[20px] shadow-[0_10px_30px_rgba(34,197,94,0.3)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-white/20 w-12 h-12 md:w-14 md:h-14"
         >
-          <span className="absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 bg-white border-2 border-[#22C55E] rounded-full flex items-center justify-center text-[8px] md:text-[10px] font-black text-[#22C55E] animate-bounce shadow-lg z-10">
+          <span className="absolute -top-1 -right-1 w-4 h-4 md:w-5 md:h-5 bg-white border-2 border-[#22C55E] rounded-full flex items-center justify-center text-[7px] md:text-[9px] font-black text-[#22C55E] animate-bounce shadow-lg z-10">
             5
           </span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
           </svg>
-          <span className="absolute left-full ml-6 glass-card text-slate-900 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
+          <span className="absolute left-full ml-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
             GTech Warehouse
           </span>
         </a>
       </div>
 
       {/* Right Side: Floating Action Buttons Stack */}
-      <div className="fixed bottom-6 right-6 z-[140] flex flex-col gap-4">
+      <div className="fixed bottom-3 right-3 z-[140] flex flex-col gap-3">
         <a 
           href="https://arena.ai"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 md:p-5 rounded-[20px] md:rounded-[24px] shadow-[0_15px_45px_rgba(99,102,241,0.4)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center"
+          className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-3 md:p-4 rounded-[16px] md:rounded-[20px] shadow-[0_10px_30px_rgba(99,102,241,0.4)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" />
           </svg>
-          <span className="absolute right-full mr-6 glass-card text-slate-900 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
+          <span className="absolute right-full mr-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
             Launch G-AI Assistant
           </span>
         </a>
@@ -242,12 +242,12 @@ const App: React.FC = () => {
           href="https://wa.me/91XXXXXXXXXX" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] text-white p-4 md:p-5 rounded-[20px] md:rounded-[24px] shadow-[0_15px_45px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform active:scale-95 group relative"
+          className="bg-[#25D366] text-white p-3 md:p-4 rounded-[16px] md:rounded-[20px] shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" viewBox="0 0 448 512" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" viewBox="0 0 448 512" fill="currentColor">
             <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.5-11.3 2.5-2.5 5.6-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.6-9.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
           </svg>
-          <span className="absolute right-full mr-6 glass-card text-slate-900 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
+          <span className="absolute right-full mr-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
             Chat on WhatsApp
           </span>
         </a>
@@ -256,12 +256,12 @@ const App: React.FC = () => {
           href={gmailUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#0056B3] text-white p-4 md:p-5 rounded-[20px] md:rounded-[24px] shadow-[0_15px_45px_rgba(0,86,179,0.4)] hover:scale-110 transition-transform active:scale-95 group relative"
+          className="bg-[#0056B3] text-white p-3 md:p-4 rounded-[16px] md:rounded-[20px] shadow-[0_10px_30px_rgba(0,86,179,0.4)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
-          <span className="absolute right-full mr-6 glass-card text-slate-900 px-5 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
+          <span className="absolute right-full mr-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
             Direct Gmail Dispatch
           </span>
         </a>

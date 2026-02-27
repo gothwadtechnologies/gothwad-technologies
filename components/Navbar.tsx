@@ -31,24 +31,24 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onLogoClick }) => {
              <img src={logoUrl} alt="Gothwad Logo" className="w-full h-full object-cover scale-110" />
           </div>
           <div className="leading-tight">
-            <h1 className="text-lg md:text-xl font-black text-slate-900 tracking-tighter uppercase">
+            <h1 className="text-sm md:text-xl font-black text-slate-900 tracking-tighter uppercase">
               Gothwad <span className="text-[#0056B3]">Technologies</span>
             </h1>
           </div>
         </div>
 
         {/* Right: Actions + Menu */}
-        <div className="flex items-center gap-4 md:gap-6">
-          <div className="hidden sm:flex items-center gap-3 md:gap-4">
+        <div className="flex items-center gap-2 md:gap-6">
+          <div className="flex items-center gap-2 md:gap-4">
             <button 
               onClick={onOpenContact}
-              className="bg-[#0056B3] text-white px-5 md:px-7 py-2.5 md:py-3 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all shadow-lg hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
+              className="bg-[#0056B3] text-white px-3 md:px-7 py-2 md:py-3 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all shadow-lg hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
             >
               Start Project
             </button>
             <button 
               onClick={onOpenContact}
-              className="bg-white text-slate-900 border border-slate-200 px-5 md:px-7 py-2.5 md:py-3 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest hover:bg-slate-50 transition-all shadow-sm hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
+              className="bg-white text-slate-900 border border-slate-200 px-3 md:px-7 py-2 md:py-3 rounded-full text-[8px] md:text-xs font-black uppercase tracking-widest hover:bg-slate-50 transition-all shadow-sm hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
             >
               Join Us
             </button>

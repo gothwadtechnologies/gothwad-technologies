@@ -13,7 +13,7 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 max-w-4xl">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10">
         <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Support</span>
         <h2 className="text-4xl md:text-5xl font-black mt-2 text-slate-900 leading-tight">Frequently Asked Questions</h2>
       </div>

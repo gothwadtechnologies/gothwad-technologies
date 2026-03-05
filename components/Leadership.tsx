@@ -25,15 +25,15 @@ const leaders = [
 const Leadership: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="text-center mb-20">
+      <div className="text-center mb-12">
         <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Board of Directors</span>
         <h2 className="text-4xl md:text-5xl font-black mt-2 text-slate-900 leading-tight">Visionary Engineering</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {leaders.map((leader, i) => (
           <div key={i} className="flex flex-col items-center text-center group">
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105 relative">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105 relative">
               <img 
                 src={leader.image} 
                 alt={leader.name} 

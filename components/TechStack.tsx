@@ -12,12 +12,12 @@ const TechStack: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6">
-      <div className="text-center mb-24">
+      <div className="text-center mb-12">
         <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Our Weapons</span>
         <h2 className="text-4xl md:text-6xl font-black mt-4 text-slate-900">The Gothwad Tech Matrix</h2>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {categories.map((cat, i) => (
           <div key={i} className="space-y-6">
             <h4 className="text-xs font-black text-blue-600 uppercase tracking-[0.3em] border-b border-slate-100 pb-4">{cat.name}</h4>

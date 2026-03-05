@@ -37,21 +37,21 @@ const services = [
 const Services: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10">
         <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Capabilities</span>
         <h2 className="text-4xl md:text-5xl font-black mt-2 text-slate-900 leading-tight">Elite Software Services</h2>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
         {services.map((s, i) => (
-          <div key={i} className="bg-white p-10 rounded-[32px] soft-shadow border border-slate-100 hover:border-blue-100 transition-all card-hover">
-            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-[#0056B3] mb-8">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div key={i} className="bg-white p-4 md:p-8 rounded-2xl md:rounded-[32px] soft-shadow border border-slate-100 hover:border-blue-100 transition-all card-hover">
+            <div className="w-10 h-10 md:w-16 md:h-16 bg-blue-50 rounded-xl md:rounded-2xl flex items-center justify-center text-[#0056B3] mb-4 md:mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={s.icon} />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">{s.title}</h3>
-            <p className="text-slate-500 leading-relaxed">
+            <h3 className="text-sm md:text-2xl font-bold text-slate-900 mb-2 md:mb-4">{s.title}</h3>
+            <p className="text-[10px] md:text-base text-slate-500 leading-relaxed">
               {s.desc}
             </p>
           </div>

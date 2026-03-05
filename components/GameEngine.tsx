@@ -4,18 +4,18 @@ import React from 'react';
 const GameEngine: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="text-center mb-20">
+      <div className="text-center mb-12">
         <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Game Studio</span>
         <h2 className="text-4xl md:text-6xl font-black mt-4 text-slate-900">Immersive Digital Worlds</h2>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2 bg-slate-50 rounded-[50px] p-12 md:p-20 relative overflow-hidden border border-slate-100 group">
+        <div className="lg:col-span-2 bg-slate-50 rounded-[50px] p-8 md:p-12 relative overflow-hidden border border-slate-100 group">
           <div className="relative z-10">
-            <h3 className="text-3xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">
+            <h3 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
               Next-Gen Game <br /> <span className="text-[#0056B3]">Physics & Rendering.</span>
             </h3>
-            <p className="text-slate-500 text-lg leading-relaxed mb-12 max-w-xl">
+            <p className="text-slate-500 text-lg leading-relaxed mb-8 max-w-xl">
               From arcade simulations to competitive multiplayer experiences, we engineer games that maintain 60FPS even on mid-range hardware.
             </p>
             <div className="flex flex-wrap gap-4">

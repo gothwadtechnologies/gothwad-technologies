@@ -37,7 +37,7 @@ const steps = [
 const Process: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="flex flex-col lg:flex-row items-end justify-between mb-20">
+      <div className="flex flex-col lg:flex-row items-end justify-between mb-12">
         <div className="lg:w-2/3">
           <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Our Methodology</span>
           <h2 className="text-4xl md:text-6xl font-black mt-2 text-slate-900 leading-tight">
@@ -49,10 +49,10 @@ const Process: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
         {steps.map((s, i) => (
           <div key={i} className="group relative">
-            <div className="text-[120px] font-black text-slate-50 absolute -top-20 -left-4 z-0 pointer-events-none select-none">
+            <div className="text-[120px] font-black text-slate-50 absolute -top-14 -left-4 z-0 pointer-events-none select-none">
               {s.icon}
             </div>
             <div className="relative z-10">

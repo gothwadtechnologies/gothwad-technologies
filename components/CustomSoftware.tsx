@@ -4,17 +4,17 @@ import React from 'react';
 const CustomSoftware: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="flex flex-col lg:flex-row items-center gap-20">
+      <div className="flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2">
           <span className="text-blue-400 font-bold uppercase tracking-widest text-sm">Tailored Engineering</span>
-          <h2 className="text-4xl md:text-7xl font-black mt-4 mb-8 leading-tight">
+          <h2 className="text-4xl md:text-7xl font-black mt-4 mb-6 leading-tight">
             Custom Software <br /> <span className="text-blue-500">Concierge.</span>
           </h2>
-          <p className="text-slate-400 text-xl leading-relaxed mb-12">
+          <p className="text-slate-400 text-xl leading-relaxed mb-8">
             Ready-made code doesn't always fit. We build bespoke digital infrastructure from the ground up, designed to solve your specific business bottleneck.
           </p>
           
-          <div className="space-y-8">
+          <div className="space-y-6">
              {[
                { t: 'Microservices Architecture', d: 'Scalable backends that grow with your traffic.' },
                { t: 'Legacy Migration', d: 'Seamlessly move your old data to modern frameworks.' },

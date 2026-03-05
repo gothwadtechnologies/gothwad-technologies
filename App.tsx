@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CompanyAim from './components/CompanyAim';
-import TrustBar from './components/TrustBar';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import CodeMarketplace from './components/CodeMarketplace';
@@ -12,7 +10,6 @@ import GameEngine from './components/GameEngine';
 import Process from './components/Process';
 import Industries from './components/Industries';
 import ProjectShowcase from './components/ProjectShowcase';
-import AppStore from './components/AppStore';
 import TechStack from './components/TechStack';
 import Comparison from './components/Comparison';
 import DevTools from './components/DevTools';
@@ -29,7 +26,6 @@ const App: React.FC = () => {
 
   const logoUrl = "https://i.ibb.co/KxxyJK63/IMG-20260215-091905-778.webp";
   const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=gothwadtechnologies@gmail.com";
-  const storeUrl = "https://gtechstore.vercel.app";
 
   const toggleLogin = () => {
     setCurrentView(currentView === 'landing' ? 'login' : 'landing');
@@ -48,32 +44,26 @@ const App: React.FC = () => {
         <section id="hero">
           <Hero />
         </section>
-        <section id="aim">
-          <CompanyAim />
-        </section>
-        <section id="trust">
-          <TrustBar />
-        </section>
         
-        <section id="stats" className="py-24 relative overflow-hidden">
+        <section id="stats" className="py-12 relative overflow-hidden">
           <Stats />
         </section>
 
         {/* Quality Manifesto Section - Shining Glassmorphism */}
-        <section id="manifesto" className="py-24 md:py-40 relative">
+        <section id="manifesto" className="py-12 md:py-20 relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-7xl">
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-[120px] opacity-30"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-200 rounded-full blur-[120px] opacity-30"></div>
           </div>
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="glass-card p-8 md:p-24 rounded-[40px] md:rounded-[60px] border border-white/50 shadow-2xl shadow-blue-500/5">
+            <div className="glass-card p-6 md:p-12 rounded-[40px] md:rounded-[60px] border border-white/50 shadow-2xl shadow-blue-500/5">
               <div className="max-w-4xl">
-                <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] bg-blue-50 px-4 py-1.5 rounded-full inline-block mb-8">The Gothwad Manifesto</span>
-                <h2 className="text-4xl md:text-8xl font-black mb-12 text-slate-900 leading-[0.95] tracking-tighter">
+                <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] bg-blue-50 px-4 py-1.5 rounded-full inline-block mb-4">The Gothwad Manifesto</span>
+                <h2 className="text-4xl md:text-8xl font-black mb-8 text-slate-900 leading-[0.95] tracking-tighter">
                   We Build Code That <br /> <span className="text-[#0056B3]">Never Sleeps.</span>
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                   <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed">
                     Every product leaving the Gothwad factory is a testament to rigorous engineering. We push for industrial-grade stability that handles millions of requests with zero latency.
                   </p>
@@ -93,15 +83,15 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="services" className="py-24 md:py-32">
+        <section id="services" className="py-12 md:py-16">
           <Services />
         </section>
 
         {/* Email Direct Contact Section */}
-        <section id="contact-email" className="py-16 md:py-24 bg-slate-200/50">
+        <section id="contact-email" className="py-10 md:py-16 bg-slate-200/50">
           <div className="container mx-auto px-6">
-            <div className="glass-card p-8 md:p-12 rounded-[40px] md:rounded-[50px] border border-white shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
-              <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 md:gap-8">
+            <div className="glass-card p-6 md:p-8 rounded-[40px] md:rounded-[50px] border border-white shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
+              <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-4 md:gap-6">
                 <div className="w-20 h-20 md:w-24 md:h-24 bg-[#0056B3] rounded-[24px] md:rounded-[30px] flex items-center justify-center text-white shadow-2xl shadow-blue-500/30 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -124,92 +114,56 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="code-marketplace" className="py-24 md:py-40">
+        <section id="code-marketplace" className="py-12 md:py-20">
           <CodeMarketplace />
         </section>
 
-        <section id="custom-software" className="py-24 md:py-32">
+        <section id="custom-software" className="py-12 md:py-16">
           <CustomSoftware />
         </section>
 
-        <section id="game-engine" className="py-24 md:py-32">
+        <section id="game-engine" className="py-12 md:py-16">
           <GameEngine />
         </section>
 
-        <section id="process" className="py-24 md:py-32">
+        <section id="process" className="py-12 md:py-16">
           <Process />
         </section>
 
-        <section id="industries" className="py-24 md:py-32">
+        <section id="industries" className="py-12 md:py-16">
           <Industries />
         </section>
 
-        <section id="project-showcase" className="py-24 md:py-32">
+        <section id="project-showcase" className="py-12 md:py-16">
           <ProjectShowcase />
         </section>
 
-        <section id="comparison" className="py-24 md:py-32">
+        <section id="comparison" className="py-12 md:py-16">
           <Comparison />
         </section>
 
-        <section id="app-store" className="py-24 md:py-40">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16 md:mb-24">
-              <span className="text-[#0056B3] font-black uppercase tracking-[0.4em] text-xs">Official GTech Repository</span>
-              <h2 className="text-5xl md:text-9xl font-black mt-4 text-slate-900 tracking-tighter uppercase leading-[0.85]">
-                The <span className="text-[#0056B3]">Warehouse</span>
-              </h2>
-              <p className="text-slate-500 mt-6 md:mt-10 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed">
-                Elite software architecture, full-source code bundles, and production-ready assets.
-              </p>
-            </div>
-            <AppStore />
-          </div>
-        </section>
-
-        <section id="studio" className="py-24 md:py-32">
+        <section id="studio" className="py-12 md:py-16">
           <DevTools />
         </section>
 
-        <section id="testimonials" className="py-24 md:py-32">
+        <section id="testimonials" className="py-12 md:py-16">
           <Testimonials />
         </section>
 
-        <section id="leadership" className="py-24 md:py-32">
+        <section id="leadership" className="py-12 md:py-16">
           <Leadership />
         </section>
 
-        <section id="faq" className="py-24 md:py-32">
+        <section id="faq" className="py-12 md:py-16">
           <FAQ />
         </section>
 
-        <section id="tech-matrix" className="py-24 md:py-32">
+        <section id="tech-matrix" className="py-12 md:py-16">
           <TechStack />
         </section>
       </main>
 
       <Footer onOpenContact={() => setDrawerOpen(true)} id="join-us" />
-
-      {/* Left Side: Floating Buttons Stack (Warehouse) */}
-      <div className="fixed bottom-3 left-3 z-[140] flex flex-col gap-3">
-        {/* Warehouse Button - Vibrant Green Theme */}
-        <a 
-          href={storeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#22C55E] text-white p-3 md:p-4 rounded-full md:rounded-[20px] shadow-[0_10px_30px_rgba(34,197,94,0.3)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-white/20 w-12 h-12 md:w-14 md:h-14"
-        >
-          <span className="absolute -top-1 -right-1 w-4 h-4 md:w-5 md:h-5 bg-white border-2 border-[#22C55E] rounded-full flex items-center justify-center text-[7px] md:text-[9px] font-black text-[#22C55E] animate-bounce shadow-lg z-10">
-            5
-          </span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-          </svg>
-          <span className="absolute left-full ml-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
-            GTech Warehouse
-          </span>
-        </a>
-      </div>
 
       {/* Right Side: Floating Action Buttons Stack */}
       <div className="fixed bottom-3 right-3 z-[140] flex flex-col gap-3">

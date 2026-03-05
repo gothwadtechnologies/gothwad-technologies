@@ -21,7 +21,7 @@ const cases = [
 const ProjectShowcase: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <div className="flex flex-col lg:flex-row items-center justify-between mb-20">
+      <div className="flex flex-col lg:flex-row items-center justify-between mb-12">
         <div className="lg:w-1/2">
           <span className="text-blue-600 font-bold uppercase tracking-widest text-sm">Case Studies</span>
           <h2 className="text-4xl md:text-6xl font-black mt-2 text-slate-900 leading-tight">
@@ -32,15 +32,15 @@ const ProjectShowcase: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {cases.map((c, i) => (
-          <div key={i} className="group bg-slate-50 rounded-[40px] p-10 md:p-16 border border-slate-100 relative overflow-hidden flex flex-col justify-between">
+          <div key={i} className="group bg-slate-50 rounded-[40px] p-8 md:p-12 border border-slate-100 relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
-              <div className="flex gap-2 mb-8">
+              <div className="flex gap-2 mb-6">
                 {c.tags.map(tag => (
                   <span key={tag} className="px-3 py-1 bg-white text-[10px] font-black uppercase text-slate-400 border border-slate-100 rounded-full tracking-widest">{tag}</span>
                 ))}
               </div>
-              <h3 className="text-3xl font-black text-slate-900 mb-6">{c.title}</h3>
-              <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+              <h3 className="text-3xl font-black text-slate-900 mb-4">{c.title}</h3>
+              <p className="text-slate-500 text-lg leading-relaxed mb-8 max-w-md">
                 {c.desc}
               </p>
             </div>

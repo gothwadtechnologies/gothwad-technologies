@@ -13,7 +13,7 @@ const Comparison: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6">
-       <div className="text-center mb-16 md:mb-20">
+       <div className="text-center mb-10 md:mb-12">
         <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-xs">Decision Matrix</span>
         <h2 className="text-4xl md:text-6xl font-black mt-4 text-slate-900 tracking-tighter">Why Gothwad Tech?</h2>
         <p className="text-slate-500 mt-4 text-sm md:text-lg font-medium">Comparing our industrial standards against the market average.</p>
@@ -21,7 +21,7 @@ const Comparison: React.FC = () => {
 
       <div className="max-w-5xl mx-auto bg-white rounded-[32px] md:rounded-[50px] shadow-2xl border border-slate-100 overflow-hidden">
         {/* Table Header - Hidden on Small Screens */}
-        <div className="hidden md:grid grid-cols-3 bg-slate-900 text-white p-8">
+        <div className="hidden md:grid grid-cols-3 bg-slate-900 text-white p-6">
            <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">Features</div>
            <div className="text-center text-[10px] font-black uppercase tracking-widest text-blue-400">Gothwad Technologies</div>
            <div className="text-right text-[10px] font-black uppercase tracking-widest text-slate-400">Others</div>
@@ -29,7 +29,7 @@ const Comparison: React.FC = () => {
         
         <div className="divide-y divide-slate-100">
            {features.map((f, i) => (
-             <div key={i} className="flex flex-col md:grid md:grid-cols-3 p-6 md:p-8 items-center hover:bg-slate-50/50 transition-colors gap-4 md:gap-0">
+             <div key={i} className="flex flex-col md:grid md:grid-cols-3 p-4 md:p-6 items-center hover:bg-slate-50/50 transition-colors gap-4 md:gap-0">
                 {/* Feature Label */}
                 <div className="w-full text-center md:text-left md:col-span-1">
                   <div className="md:hidden text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Standard</div>

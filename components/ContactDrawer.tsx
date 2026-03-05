@@ -24,7 +24,6 @@ const ContactDrawer: React.FC<ContactDrawerProps> = ({ isOpen, onClose }) => {
     { label: 'Industry Solutions', id: 'industries' },
     { label: 'Project Showcase', id: 'project-showcase' },
     { label: 'Market Comparison', id: 'comparison' },
-    { label: 'GTech Warehouse', id: 'app-store' },
     { label: 'Gothwad Studio', id: 'studio' },
     { label: 'Client Testimonials', id: 'testimonials' },
     { label: 'Leadership Team', id: 'leadership' },

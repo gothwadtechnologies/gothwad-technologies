@@ -77,7 +77,7 @@ const apps = [
 ];
 
 const AppStore: React.FC = () => {
-  const storeUrl = "https://gtech-gothwad.github.io/gtech-store/";
+  const storeUrl = "https://gtechstore.vercel.app";
 
   return (
     <div className="space-y-32">

@@ -11,12 +11,12 @@ const JoinUsSection: React.FC = () => {
   ];
 
   const githubLinks = [
-    { name: 'Gothwad Main', url: 'https://github.com/gothwad' },
-    { name: 'GTech Store', url: 'https://github.com/gtech-gothwad' },
-    { name: 'School X Core', url: '#' },
-    { name: 'IDE Plugins', url: '#' },
-    { name: 'UI Components', url: '#' },
-    { name: 'Open Source', url: '#' },
+    { name: 'Gothwad Main', url: 'https://github.com/gothwadtechnologies' },
+    { name: 'GTech Store', url: 'https://github.com/gothwadtechnologies' },
+    { name: 'School X Core', url: 'https://github.com/gothwadtechnologies' },
+    { name: 'IDE Plugins', url: 'https://github.com/gothwadtechnologies' },
+    { name: 'UI Components', url: 'https://github.com/gothwadtechnologies' },
+    { name: 'Open Source', url: 'https://github.com/gothwadtechnologies' },
   ];
 
   const telegramLinks = [

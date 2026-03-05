@@ -37,6 +37,8 @@ const products = [
 ];
 
 const CodeMarketplace: React.FC = () => {
+  const storeUrl = "https://gtechstore.vercel.app";
+
   return (
     <div className="container mx-auto px-6">
       <div className="flex flex-col md:flex-row items-end justify-between mb-20">
@@ -47,9 +49,14 @@ const CodeMarketplace: React.FC = () => {
           </h2>
         </div>
         <div className="mt-8 md:mt-0">
-          <button className="bg-[#0056B3] text-white px-8 py-4 rounded-2xl font-black hover:shadow-xl transition-all">
+          <a 
+            href={storeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#0056B3] text-white px-8 py-4 rounded-2xl font-black hover:shadow-xl transition-all inline-block"
+          >
             View All 200+ Projects
-          </button>
+          </a>
         </div>
       </div>
 
@@ -77,9 +84,14 @@ const CodeMarketplace: React.FC = () => {
                   <p className="text-slate-400 text-xs line-through">{p.oldPrice}</p>
                   <p className="text-3xl font-black text-slate-900">{p.price}</p>
                 </div>
-                <button className="flex-grow bg-slate-900 text-white py-4 rounded-2xl font-black hover:bg-blue-600 transition-colors">
+                <a 
+                  href={storeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-grow bg-slate-900 text-white py-4 rounded-2xl font-black hover:bg-blue-600 transition-colors text-center"
+                >
                   Get Source Code
-                </button>
+                </a>
               </div>
             </div>
           </div>

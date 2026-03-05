@@ -29,7 +29,7 @@ const App: React.FC = () => {
 
   const logoUrl = "https://i.ibb.co/KxxyJK63/IMG-20260215-091905-778.webp";
   const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=gothwadtechnologies@gmail.com";
-  const storeUrl = "https://gtech-gothwad.github.io/gtech-store/";
+  const storeUrl = "https://gtechstore.vercel.app";
 
   const toggleLogin = () => {
     setCurrentView(currentView === 'landing' ? 'login' : 'landing');
@@ -190,19 +190,8 @@ const App: React.FC = () => {
 
       <Footer onOpenContact={() => setDrawerOpen(true)} id="join-us" />
 
-      {/* Left Side: Floating Buttons Stack (Logo + Warehouse) */}
+      {/* Left Side: Floating Buttons Stack (Warehouse) */}
       <div className="fixed bottom-3 left-3 z-[140] flex flex-col gap-3">
-        {/* Identity Portal Button - Perfect Circle for Logo - ZOOMED IN */}
-        <button 
-          onClick={toggleLogin}
-          className="bg-white p-3 md:p-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:scale-110 transition-transform active:scale-95 group relative flex items-center justify-center border border-slate-200 overflow-hidden w-12 h-12 md:w-14 md:h-14"
-        >
-          <img src={logoUrl} alt="Gothwad Logo" className="w-full h-full object-cover scale-[1.7]" />
-          <span className="absolute left-full ml-4 glass-card text-slate-900 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-[0.2em] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-2xl pointer-events-none hidden md:block">
-            Access Identity Portal
-          </span>
-        </button>
-
         {/* Warehouse Button - Vibrant Green Theme */}
         <a 
           href={storeUrl}

@@ -3,7 +3,6 @@ import React from 'react';
 
 const reviews = [
   { name: 'Dr. Ramesh Sharma', org: 'Global Public School', text: 'School X has reduced our administrative workload by 60%. Highly recommend Gothwad Tech!' },
-  { name: 'Sameer Verma', org: 'EduStart Solutions', text: 'The Gothwad Studio SDK is a masterpiece. It literally cut our development time in half.' },
   { name: 'Ankita Meena', org: 'Gamerz Zone', text: 'Working with Pawan was a breeze. They delivered a high-performance game in record time.' },
   { name: 'Rahul Chaudhary', org: 'S.R. Academy', text: 'The attendance and fee module in School X is the most stable we have ever used.' }
 ];

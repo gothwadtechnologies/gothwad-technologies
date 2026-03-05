@@ -23,7 +23,7 @@ const roles = [
   {
     id: 'developer',
     title: 'G-Developer',
-    desc: 'SDKs, API nodes & docs.',
+    desc: 'API nodes & technical docs.',
     icon: '💻',
     color: 'from-slate-700 to-slate-900'
   },

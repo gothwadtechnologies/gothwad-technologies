@@ -39,15 +39,6 @@ const apps = [
     iconColor: 'bg-indigo-100 text-indigo-600',
   },
   {
-    id: 'gothwad-studio',
-    name: 'Gothwad Studio',
-    tag: 'Dev Favorite',
-    category: 'IDE/Tools',
-    description: 'The definitive SDK for React Native and TypeScript enterprise development.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop',
-    iconColor: 'bg-blue-100 text-[#0056B3]',
-  },
-  {
     id: 'pixel-dash',
     name: 'Pixel Dash',
     tag: 'Gaming',

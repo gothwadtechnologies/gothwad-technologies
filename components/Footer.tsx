@@ -44,9 +44,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenContact, id }) => {
             <h4 className="text-lg font-bold mb-8">Ecosystem</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><a href="#" className="hover:text-white transition-colors">School X Management</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Gothwad Studio (IDE)</a></li>
               <li><a href="#" className="hover:text-white transition-colors">App Store Marketplace</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Developer SDK</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Cloud Infrastructure</a></li>
             </ul>
           </div>

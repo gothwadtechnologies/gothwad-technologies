@@ -32,16 +32,6 @@ const DevTools: React.FC = () => {
                 <p className="text-sm text-slate-500">Accessible, SEO-optimized, and lightening fast HTML5/Tailwind architectures.</p>
               </div>
             </div>
-
-            <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex items-center gap-6 group hover:border-blue-200 transition-all">
-               <div className="w-14 h-14 bg-yellow-50 text-yellow-600 rounded-xl flex items-center justify-center text-2xl">
-                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3m14.47 15.74c1.1-.35 1.5-.95 1.5-1.9s-.4-1.55-1.5-1.9c-1.1-.35-2.2-.4-2.2-.4s-.1-.05-.1-.1c0-.05.1-.1.1-.1s1.1-.05 2.2-.4c1.1-.35 1.5-.95 1.5-1.9s-.4-1.55-1.5-1.9c-1.1-.35-2.2-.4-2.2-.4H12v11h2.27s1.1-.05 2.2-.4M10 12.5H8V15h2c.8 0 1.5-.4 1.5-1.25S10.8 12.5 10 12.5M10 8H8v2.5h2c.8 0 1.5-.4 1.5-1.25S10.8 8 10 8z"/></svg>
-               </div>
-              <div>
-                <h4 className="font-bold text-slate-900 text-lg">Gothwad Studio (SDK)</h4>
-                <p className="text-sm text-slate-500">Our proprietary development toolkit that speeds up app generation by 40%.</p>
-              </div>
-            </div>
           </div>
         </div>
 

@@ -8,13 +8,6 @@ const cases = [
     result: 'Zero Uptime Loss',
     desc: 'Successfully migrated a legacy institutional database to G-Cloud with real-time sync for parents.',
     tags: ['Cloud', 'React Native', 'Firebase']
-  },
-  {
-    title: 'Gothwad Studio SDK',
-    metric: '40% Dev Boost',
-    result: 'Optimized Workflow',
-    desc: 'Developed a proprietary internal framework that allows for rapid modular app development.',
-    tags: ['TypeScript', 'Node.js', 'DevOps']
   }
 ];
 

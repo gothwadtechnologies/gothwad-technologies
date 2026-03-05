@@ -10,7 +10,7 @@ const milestones = [
   {
     year: '2021',
     title: 'Enterprise Frameworks',
-    description: 'Transitioned to TypeScript and React Native. Established Gothwad Studio as our internal SDK engine.'
+    description: 'Transitioned to TypeScript and React Native. Established core internal engines for rapid deployment.'
   },
   {
     year: '2022',

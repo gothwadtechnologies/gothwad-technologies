@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
-import CodeMarketplace from './components/CodeMarketplace';
 import CustomSoftware from './components/CustomSoftware';
 import GameEngine from './components/GameEngine';
 import Process from './components/Process';
@@ -112,10 +111,6 @@ const App: React.FC = () => {
               </button>
             </div>
           </div>
-        </section>
-
-        <section id="code-marketplace" className="py-12 md:py-20">
-          <CodeMarketplace />
         </section>
 
         <section id="custom-software" className="py-12 md:py-16">

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 const faqs = [
   { q: 'How scalable is School X?', a: 'School X is designed with micro-services architecture, allowing it to handle from 500 to 50,000 students without performance degradation.' },
-  { q: 'Do you provide custom SDKs?', a: 'Yes, Gothwad Studio provides custom SDK integration for teams looking to accelerate their internal development cycles.' },
   { q: 'What is the pricing model for Gothwad App Store?', a: 'We offer both one-time licenses and SaaS-based subscription models depending on the product and usage requirements.' },
   { q: 'Is my data secure with Gothwad Cloud?', a: 'We utilize enterprise-grade encryption (AES-256) and redundant cloud backups to ensure 99.99% data safety.' }
 ];

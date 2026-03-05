@@ -1,7 +1,11 @@
 
 import React from 'react';
 
-const JoinUsSection: React.FC = () => {
+interface JoinUsSectionProps {
+  onStartProject: () => void;
+}
+
+const JoinUsSection: React.FC<JoinUsSectionProps> = ({ onStartProject }) => {
   const youtubeLinks = [
     { name: 'Ai Tricker', url: 'https://youtube.com/@aitricker' },
     { name: 'Gothwad Tech', url: '#' },
@@ -34,7 +38,6 @@ const JoinUsSection: React.FC = () => {
     { name: 'Discord', url: '#' },
     { name: 'Medium Blog', url: '#' },
     { name: 'Portfolio', url: '#' },
-    { name: 'Contact Desk', url: '#' },
   ];
 
   return (
@@ -46,9 +49,17 @@ const JoinUsSection: React.FC = () => {
           </h2>
           <p className="text-slate-400 mt-2 text-sm md:text-base">Connect with us across all platforms to stay updated and collaborate.</p>
         </div>
-        <div className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/20">
-          <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-          <span className="text-[10px] font-black text-blue-400 uppercase tracking-widest">Community Active</span>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/20">
+            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+            <span className="text-[10px] font-black text-blue-400 uppercase tracking-widest">Community Active</span>
+          </div>
+          <button 
+            onClick={onStartProject}
+            className="bg-[#0056B3] text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-lg active:scale-95"
+          >
+            Start Project
+          </button>
         </div>
       </div>
 

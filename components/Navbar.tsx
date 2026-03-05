@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 
 interface NavbarProps {
   onOpenContact: () => void;
+  onStartProject: () => void;
   onLogoClick?: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onLogoClick }) => {
+const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onStartProject, onLogoClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const logoUrl = "https://i.ibb.co/KxxyJK63/IMG-20260215-091905-778.webp";
@@ -41,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onLogoClick }) => {
         <div className="flex items-center gap-2 md:gap-6">
           <div className="flex items-center gap-2 md:gap-4">
             <button 
-              onClick={onOpenContact}
+              onClick={onStartProject}
               className="bg-[#0056B3] text-white px-4 md:px-7 py-2 md:py-3 rounded-full text-[9px] md:text-xs font-black uppercase tracking-widest hover:bg-slate-900 transition-all shadow-lg hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
             >
               Start Project

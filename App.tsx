@@ -14,10 +14,11 @@ import FAQ from './components/FAQ';
 import ContactDrawer from './components/ContactDrawer';
 import Footer from './components/Footer';
 import LoginView from './components/LoginView';
+import ProjectInquiryView from './components/ProjectInquiryView';
 
 const App: React.FC = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const [currentView, setCurrentView] = useState<'landing' | 'login'>('landing');
+  const [currentView, setCurrentView] = useState<'landing' | 'login' | 'project-inquiry'>('landing');
 
   const logoUrl = "https://i.ibb.co/KxxyJK63/IMG-20260215-091905-778.webp";
   const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=gothwadtechnologies@gmail.com";
@@ -31,9 +32,17 @@ const App: React.FC = () => {
     return <LoginView onBack={() => setCurrentView('landing')} />;
   }
 
+  if (currentView === 'project-inquiry') {
+    return <ProjectInquiryView onBack={() => setCurrentView('landing')} />;
+  }
+
   return (
     <div className="min-h-screen selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden text-slate-900">
-      <Navbar onOpenContact={() => setDrawerOpen(true)} onLogoClick={toggleLogin} />
+      <Navbar 
+        onOpenContact={() => setDrawerOpen(true)} 
+        onStartProject={() => setCurrentView('project-inquiry')}
+        onLogoClick={toggleLogin} 
+      />
       
       <main className="pt-[80px] md:pt-[100px]">
         <section id="hero">
@@ -126,7 +135,11 @@ const App: React.FC = () => {
         </section>
       </main>
 
-      <Footer onOpenContact={() => setDrawerOpen(true)} id="join-us" />
+      <Footer 
+        onOpenContact={() => setDrawerOpen(true)} 
+        onStartProject={() => setCurrentView('project-inquiry')}
+        id="join-us" 
+      />
 
       {/* Right Side: Floating Action Buttons Stack */}
       <div className="fixed bottom-3 right-3 z-[140] flex flex-col gap-3">

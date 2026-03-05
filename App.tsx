@@ -6,9 +6,7 @@ import Stats from './components/Stats';
 import Services from './components/Services';
 import Process from './components/Process';
 import Industries from './components/Industries';
-import ProjectShowcase from './components/ProjectShowcase';
 import TechStack from './components/TechStack';
-import Comparison from './components/Comparison';
 import DevTools from './components/DevTools';
 import Testimonials from './components/Testimonials';
 import Leadership from './components/Leadership';
@@ -105,14 +103,6 @@ const App: React.FC = () => {
 
         <section id="industries" className="py-12 md:py-16">
           <Industries />
-        </section>
-
-        <section id="project-showcase" className="py-12 md:py-16">
-          <ProjectShowcase />
-        </section>
-
-        <section id="comparison" className="py-12 md:py-16">
-          <Comparison />
         </section>
 
         <section id="studio" className="py-12 md:py-16">

@@ -4,8 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
-import CustomSoftware from './components/CustomSoftware';
-import GameEngine from './components/GameEngine';
 import Process from './components/Process';
 import Industries from './components/Industries';
 import ProjectShowcase from './components/ProjectShowcase';
@@ -57,23 +55,38 @@ const App: React.FC = () => {
           
           <div className="container mx-auto px-6 relative z-10">
             <div className="glass-card p-6 md:p-12 rounded-[40px] md:rounded-[60px] border border-white/50 shadow-2xl shadow-blue-500/5">
-              <div className="max-w-4xl">
-                <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] bg-blue-50 px-4 py-1.5 rounded-full inline-block mb-4">The Gothwad Manifesto</span>
-                <h2 className="text-4xl md:text-8xl font-black mb-8 text-slate-900 leading-[0.95] tracking-tighter">
-                  We Build Code That <br /> <span className="text-[#0056B3]">Never Sleeps.</span>
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-                  <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed">
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-10">
+                  <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px] bg-blue-50 px-4 py-1.5 rounded-full inline-block mb-4">The Gothwad Manifesto</span>
+                  <h2 className="text-4xl md:text-8xl font-black text-slate-900 leading-[0.95] tracking-tighter">
+                    We Build Code That <br /> <span className="text-[#0056B3]">Never Sleeps.</span>
+                  </h2>
+                </div>
+                
+                <div className="space-y-10">
+                  <p className="text-slate-600 text-lg md:text-2xl font-medium leading-relaxed text-center max-w-3xl mx-auto">
                     Every product leaving the Gothwad factory is a testament to rigorous engineering. We push for industrial-grade stability that handles millions of requests with zero latency.
                   </p>
-                  <div className="space-y-8">
-                    <div className="border-l-4 border-[#0056B3] pl-6 py-2">
-                      <h4 className="text-xl font-black text-slate-900 mb-2">Gothwad Accountability</h4>
-                      <p className="text-slate-500 text-sm">Registered corporate-level protection for your business investment.</p>
+                  
+                  <div className="grid grid-cols-2 gap-4 md:gap-10">
+                    <div className="bg-white/50 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-white shadow-sm hover:shadow-md transition-all">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#0056B3] rounded-xl flex items-center justify-center text-white mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                      <h4 className="text-sm md:text-xl font-black text-slate-900 mb-1 md:mb-2">Accountability</h4>
+                      <p className="text-slate-500 text-[10px] md:text-sm leading-tight">Corporate-level protection for your investment.</p>
                     </div>
-                    <div className="border-l-4 border-blue-200 pl-6 py-2">
-                      <h4 className="text-xl font-black text-slate-900 mb-2">Clean Engineering</h4>
-                      <p className="text-slate-500 text-sm">Modular documentation designed for infinite scale.</p>
+                    
+                    <div className="bg-white/50 backdrop-blur-sm p-4 md:p-8 rounded-3xl border border-white shadow-sm hover:shadow-md transition-all">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-blue-100 rounded-xl flex items-center justify-center text-[#0056B3] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                      </div>
+                      <h4 className="text-sm md:text-xl font-black text-slate-900 mb-1 md:mb-2">Clean Engineering</h4>
+                      <p className="text-slate-500 text-[10px] md:text-sm leading-tight">Modular docs designed for infinite scale.</p>
                     </div>
                   </div>
                 </div>
@@ -84,41 +97,6 @@ const App: React.FC = () => {
 
         <section id="services" className="py-12 md:py-16">
           <Services />
-        </section>
-
-        {/* Email Direct Contact Section */}
-        <section id="contact-email" className="py-10 md:py-16 bg-slate-200/50">
-          <div className="container mx-auto px-6">
-            <div className="glass-card p-6 md:p-8 rounded-[40px] md:rounded-[50px] border border-white shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
-              <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-4 md:gap-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-[#0056B3] rounded-[24px] md:rounded-[30px] flex items-center justify-center text-white shadow-2xl shadow-blue-500/30 shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-black text-slate-900 mb-2 tracking-tighter">Get in Touch Directly</h3>
-                  <a href={gmailUrl} target="_blank" rel="noopener noreferrer" className="text-lg md:text-2xl font-black text-[#0056B3] hover:text-slate-900 transition-colors flex items-center justify-center md:justify-start gap-2 underline decoration-2 md:decoration-4 underline-offset-8">
-                    gothwadtechnologies@gmail.com
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <button onClick={() => setDrawerOpen(true)} className="w-full lg:w-auto bg-slate-900 text-white px-10 md:px-14 py-5 md:py-6 rounded-2xl md:rounded-3xl font-black uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-[#0056B3] transition-all shadow-2xl hover:scale-105 active:scale-95">
-                Open Project Desk
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="custom-software" className="py-12 md:py-16">
-          <CustomSoftware />
-        </section>
-
-        <section id="game-engine" className="py-12 md:py-16">
-          <GameEngine />
         </section>
 
         <section id="process" className="py-12 md:py-16">

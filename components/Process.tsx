@@ -49,18 +49,18 @@ const Process: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-4 md:gap-x-12">
         {steps.map((s, i) => (
           <div key={i} className="group relative">
-            <div className="text-[120px] font-black text-slate-50 absolute -top-14 -left-4 z-0 pointer-events-none select-none">
+            <div className="text-6xl md:text-[120px] font-black text-slate-50 absolute -top-8 md:-top-14 -left-2 md:-left-4 z-0 pointer-events-none select-none">
               {s.icon}
             </div>
             <div className="relative z-10">
-              <h3 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-[#0056B3] transition-colors">{s.title}</h3>
-              <p className="text-slate-500 leading-relaxed font-medium">
+              <h3 className="text-sm md:text-2xl font-black text-slate-900 mb-2 md:mb-4 group-hover:text-[#0056B3] transition-colors leading-tight">{s.title}</h3>
+              <p className="text-[10px] md:text-base text-slate-500 leading-relaxed font-medium">
                 {s.desc}
               </p>
-              <div className="w-12 h-1 bg-slate-100 mt-6 group-hover:w-full group-hover:bg-[#0056B3] transition-all duration-500"></div>
+              <div className="w-8 md:w-12 h-0.5 md:h-1 bg-slate-100 mt-4 md:mt-6 group-hover:w-full group-hover:bg-[#0056B3] transition-all duration-500"></div>
             </div>
           </div>
         ))}
